@@ -16,6 +16,8 @@ to
 ```
 ### Item 2:  Prefer <iostream> to <stdio.h>
 ### Item 3:  Prefer new and delete to malloc and free.
+3.1. malloc and free don't know about constructors and destructors.
+3.2. Mixing new and delete with malloc and free is usually a bad idea.
 ### Item 5:  Use the same form in corresponding uses of new and delete.
 ### Item 6:  Use delete on pointer members in destructors
 ### Item 7:  Be prepared for out-of-memory conditions
